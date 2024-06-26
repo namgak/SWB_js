@@ -4,34 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML기초</title>
+    <title>CSS기초</title>
+    <style>
+        /* 내부 스타일
+        section {
+            background-color:cornflowerblue;
+            color:brown;
+        } */
+    </style>
+    <!-- /* 외부스타일 */ -->
+    <link rel="stylesheet" type='text/css' href='./02.css'>
+
 </head>
 
 <body>
 
     <!-- vs코드에서 주석은 ctrl+/ -->
     <header>
-        <!-- 의미를 부여하는 태그가 생김 : 시멘틱 해더 -->
-        mylogo
+        <div>
+            <!-- 의미를 부여하는 태그가 생김 : 시멘틱 해더 -->
+            소프트웨어융합기초1
+        </div>
         <ul>
             <!-- 아이디를 찾아야 할때는 #을 작성하고, 설정한 아이디의 이름을 입력 -->
             <li><a href="#d1">HTML</a></li>
             <li><a href="#d2">CSS</a></li>
             <li><a href="#d3">JavaScript</a></li>
             <li><a href="#d4">React</a></li>
-            <li>facebook </li>
-            <li>instagram</li>
+            <li><a href="#">facebook</a></li>
+            <li><a href="#">instagram</a></li>
         </ul>
     </header>
     <!-- div는 블록 요소 -->
     <main>
-        <article style="background-color:beige;">
+        <article>
             <!-- style 속성에 들어가는게 css이다. 여러개를 지정할때, ; 필요. 하나도 그냥 적기 -->
             <h1>프론트엔드 (FrontEnd)</h1>
-            <p>
+            <!-- <p>
                 <img src="../image/html.png">
 
-            </p>
+            </p> -->
 
             <p>
                 웹에서 사용자에게 시각적으로 보여지는 부분을 의미한다. 프론트엔드쪽에서는 주로 HTML, CSS, 자바스크립트가 쓰이며, 요즘은 페이스북에서 개발한 자바스크립트에서 파생된 싱글 페이지
@@ -39,11 +51,11 @@
             </p>
         </article>
 
-        <section id="d1">
+        <section id="d1" class="c1">
             <!-- 책갈피를 설정하기 위해 div에 아이디를 설정해준다 -->
             <h2>HTML</h2>
             <p>
-                <img src="../image/html.png">
+                <img src="../image/html.png" alt="html">
 
             </p>
             <p>
@@ -51,10 +63,10 @@
             </p>
         </section>
 
-        <section id="d2">
+        <section id="d2" class="c2">
             <h2>CSS</h2>
             <p>
-                <img src="../image/css.png">
+                <img src="../image/css.png" alt="css">
 
             </p>
             <p>
@@ -62,10 +74,10 @@
             </p>
         </section>
 
-        <section id="d3">
+        <section id="d3" class="c1">
             <h2>JavaScript</h2>
             <p>
-                <img src="../image/js.png">
+                <img src="../image/js.png" alt="js">
 
             </p>
             <p>
@@ -73,10 +85,10 @@
             </p>
         </section>
 
-        <section id="d4">
+        <section id="d4" class="c2">
             <h2>React</h2>
             <p>
-                <img src="../image/react.png">
+                <img src="../image/react.png" alt="react">
             </p>
             <p>
                 사용자 인터페이스를 만들기 위한 JavaScript 라이브러리

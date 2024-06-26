@@ -1,0 +1,64 @@
+/* 전체 요소 모두 선택 */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: rgb(230, 238, 255);
+    color:black;
+}
+
+.c1,.c2,.c3,.c4 {
+    background-color: white;
+    padding: 20px;
+    margin : 20px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 20px;
+    height: 130px
+}
+
+
+main>article {
+    height : 80px;
+    padding : 20px;
+    margin : 10px;
+}
+
+img[alt] {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 10px
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: inline-flex;
+    padding: 4px;
+
+}
+
+/* 가상클래스 selector */
+a:hover {
+    color: rgb(245, 245, 245);
+    background-color: rgb(14, 119, 255);
+    border-radius: 15%;
+}
+
+footer{
+    color: white;
+    background-color: black;
+}
+
+
+/* 미디어쿼리 */
+@media screen and (min-width: 1024px) {
+
+
+}
