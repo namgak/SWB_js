@@ -8,7 +8,7 @@
     + [W3school](https://www.w3schools.com/)
     + [CSS Cheat Sheet](https://htmlcheatsheet.com/css/)
 + 마크다운 참조
-    + [Markdown]https://gist.github.com/ihoneymon/652be052a0727ad59601
+    + [Markdown](https://gist.github.com/ihoneymon/652be052a0727ad59601)
 + git config 설정
     + git config --global user name "username"
     + git config --global user email user@email.com
