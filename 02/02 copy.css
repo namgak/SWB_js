@@ -58,6 +58,7 @@ a {
     color: black;
     display: inline-flex;
     padding: 4px;
+   
 
 }
 
@@ -90,6 +91,7 @@ div,ul {
     /* 글자 안으로 들어가게 하기 */
     display: flex;
 }
+
 
 /* 미디어쿼리 */
 @media screen and (min-width: 1024px) {

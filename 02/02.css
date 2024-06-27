@@ -3,19 +3,34 @@
     margin: 0px;
     padding: 0px;
 }
+
 body {
     background-color: rgb(230, 238, 255);
-    color:black;
+    color: black;
 }
 
-.c1,.c2,.c3,.c4 {
+.c1,
+.c2,
+.c3,
+.c4 {
     background-color: white;
     padding: 20px;
-    margin : 20px;
+    margin: 20px;
+ 
 }
 
-header>div{
-    font-size: 50px;
+h1{
+    margin: 15px;    
+}
+
+main>article>p{
+    margin: 15px;   
+}
+
+
+header>div {
+    font-size: 40px;
+    font-weight: bold;
 }
 
 header {
@@ -23,14 +38,24 @@ header {
     justify-content: center;
     align-items: start;
     padding: 20px;
-    height: 130px
+    height: 200px;
+}
+
+div, ul{
+    border: 3px;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    
 }
 
 
+
 main>article {
-    height : 80px;
-    padding : 20px;
-    margin : 10px;
+    height: 80px;
+    padding: 20px;
+    margin: 10px;
+  
 }
 
 img[alt] {
@@ -46,7 +71,9 @@ a {
     background-color: rgb(14, 119, 255);
     border-radius: 15%;
     display: inline-flex;
+    margin : 10px;
     padding: 4px;
+   
 
 }
 
@@ -57,14 +84,17 @@ a:hover {
     border-radius: 15%;
 }
 
-footer{
+footer {
     color: white;
     background-color: black;
 }
 
 
+
 /* 미디어쿼리 */
 @media screen and (min-width: 1024px) {
-
-
+    header {
+        display: flex;
+        flex-direction: column;
+    }
 }
