@@ -1,21 +1,38 @@
-main{
-    width : 80%
-    display : flex;
-    justify-content : center;
-    align-items : center;
-    flex-direction : column;
+section {
+    width : 100%;
+    height: 400px;
+
+    background-color: aliceblue;
+    border : 1px dashed gainsboro;
+    padding: 20px;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-header{
-    width :100%
-    height :80px;
-    background-color :black;
-    color : white;
-    display : flex;
-    justify-content : center;
 
+section>div{
+    margin : 20px;
+    font-size: large;
+}
 
+button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 
-
+    padding: 10px;
+    background-color: royalblue;
+    color: white;
     
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 10px;
+    border : none;
+}
+
+button:hover {
+    background-color: coral;
+
 }
