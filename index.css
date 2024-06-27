@@ -1,0 +1,13 @@
+/* 전체 요소 모두 선택 */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(236, 244, 255);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
