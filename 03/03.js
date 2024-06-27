@@ -17,7 +17,8 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     //버튼을 누르면 메시지 영역에 있는 키워드 보여주기
     bt.addEventListener("click", ()=> {
-        msg.innerHTML = '<h1>안녕</h1>'
+       if (msg.innerHTML == '안녕') msg.innerHTML = "잘가";
+       else msg.innerHTML ="안녕" ;
     });
 
 });
