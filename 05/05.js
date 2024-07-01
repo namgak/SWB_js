@@ -13,8 +13,6 @@ const convert = (sel1, sel2, lb1,lb2,txt1,txt2) =>{
     }
 }
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const sel1 = document.querySelector('#sel1');
     const sel2 = document.querySelector('#sel2');
