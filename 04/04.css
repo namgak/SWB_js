@@ -1,0 +1,27 @@
+#divContent > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #divContent div {
+    margin: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  button {
+    display: inline-flex;
+    margin: 5px;
+  }
+
+/* 맞음과 틀림 글자색 넣는 법은 js에서 id를 설정해서 css에서 설정 */
+  #msgRed{
+    color: red;
+  }
+
+  #msgBlue{
+    color: blue;
+  }
