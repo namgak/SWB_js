@@ -31,12 +31,26 @@ document.addEventListener('DOMContentLoaded', () => {
     //랜덤수
     let n = 0;
 
-    //2. 확인 버튼 처리
+    //초기화 함수
+    const init =() => {
+        img.setAttribute('src', './img/what.png');
+        txt1.value = '';
+        txt1.style.display = 'inline';
+        btok.textContent ='확인';
+        flag = true;
+    }
 
+
+    //2. 확인 버튼 처리
     btok.addEventListener('click', () => {
 
+        //확인버튼이 아닌 경우
+        if (btok.textContent != '확인'){
+            init(); //초기화 함수 호출
+            return
+        }
 
-        if(flag){
+        if(flag){ //랜덤수 생성
             n=Math.floor(Math.random() * 100) + 1; //1~100까지 랜덤 수 생성
             console.log((n))
             flag=false; //랜덤수를 하나 생성하면 더이상 생성하지 않도록 flag를 false로 
@@ -50,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return
         } 
 
-        //비교
+        //3.비교
         let usern = parseInt(txt1.value); //사용자입력수
         if (n > usern){ //크면
             img.setAttribute('src', './img/up.png')
