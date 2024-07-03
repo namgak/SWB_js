@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         for(let c of txt1.value){              //문자열 모두 순회
             console.log(c)
         }
+
         //문자열 거꾸로 콘솔에 출력해보기
         let tm='';
         for(let i = txt1.value.length -1; i>=0; i--){
